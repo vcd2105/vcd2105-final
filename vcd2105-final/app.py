@@ -18,14 +18,11 @@ def test():
 
 @app.route('/about-me')
 def about():
-    return'</p>Victoria loves cycling and has completed several long<]/p>'
-    '</p>distance rides in NYC, including the 65 mile Velocity</p>'
-    '</p>ride which raised money for cancer research, as well as</p>'
-    '<p>the final NYC century.</p>'
+    return render_template('about-me.html')
 
 @app.route('/favorite-people')
 def favorite():
-     return <img src="static/favoritepeople.jpeg" alt="Favorites">
+     return render_template('favorite-people.html')
     
 
 #start the server
